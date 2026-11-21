@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "version": "2026.11.21",
+  "baseLocale": "pt-BR",
+  "locales": [
+    "pt-BR"
+  ],
+  "files": {
+    "locales/pt-BR.json": {
+      "keys": 1383,
+      "sha256": "0b46b4939ea46f0e6522d534d21a9a8ac7cee7e8019cfba16abe00c7f583510d"
+    },
+    "native/android/pt-BR.json": {
+      "keys": 60,
+      "sha256": "526e9e45bc138cc16129f15d64d9ff92bd36efab711057db51d3e615d8cb9735"
+    },
+    "native/rust/pt-BR.json": {
+      "keys": 57,
+      "sha256": "19c924d613302742d825770cf8341cd5cddfed7078c7c74cb8417604b9ed5b63"
+    }
+  }
+}

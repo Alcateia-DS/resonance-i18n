@@ -1,0 +1,16 @@
+{
+  "name": "resonance-i18n",
+  "version": "2026.11.21",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Dicionários oficiais de idiomas (i18n) do Resonance",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "manifest": "node scripts/validate.mjs --write-manifest",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

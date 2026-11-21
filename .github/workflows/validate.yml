@@ -1,0 +1,60 @@
+name: Validate i18n
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout base code (safe validation without executing fork scripts)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            locales.json
+            locales
+            native
+            manifest.json
+
+      - name: Checkout trusted validator from base ref
+        if: github.event_name == 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.base_ref }}
+          path: .trusted-tools
+          sparse-checkout: |
+            package.json
+            scripts
+            test
+
+      - name: Checkout tools on push
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          path: .trusted-tools
+          sparse-checkout: |
+            package.json
+            scripts
+            test
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Validate dictionaries and manifest
+        env:
+          RESONANCE_I18N_ROOT: ${{ github.workspace }}
+        run: |
+          node .trusted-tools/scripts/validate.mjs
+          node --test .trusted-tools/test/*.test.mjs

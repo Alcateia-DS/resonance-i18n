@@ -1,0 +1,13 @@
+# Nenhuma alteração entra na main sem aprovação de mantenedor.
+* @RaelZ
+
+# Arquivos estruturais, segurança, CI e idioma-base têm proteção reforçada.
+/.github/ @RaelZ
+/scripts/ @RaelZ
+/test/ @RaelZ
+/LICENSE @RaelZ
+/package.json @RaelZ
+/manifest.json @RaelZ
+/locales.json @RaelZ
+/locales/pt-BR.json @RaelZ
+/native/**/pt-BR.json @RaelZ
