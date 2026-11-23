@@ -7,8 +7,8 @@
   ],
   "files": {
     "locales/pt-BR.json": {
-      "keys": 1383,
-      "sha256": "0b46b4939ea46f0e6522d534d21a9a8ac7cee7e8019cfba16abe00c7f583510d"
+      "keys": 1394,
+      "sha256": "fb360b235721e6d646f9a62650bf203f14da03c636ec7f307a07de52ff72020b"
     },
     "native/android/pt-BR.json": {
       "keys": 60,
