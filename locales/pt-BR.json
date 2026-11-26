@@ -1188,6 +1188,8 @@
   "settings.data.autoSync": "Sincronização Automática na Nuvem",
   "settings.data.autoSyncHint": "Aplica sempre a última atualização disponível na nuvem em qualquer dispositivo conectado, sem precisar sincronizar manualmente",
   "settings.data.clearProgress": "Limpar Histórico de Progresso",
+  "settings.data.cloudErrorLogs": "Enviar logs de erro para a nuvem",
+  "settings.data.cloudErrorLogsHint": "Desativado por padrão. Quando ligado, envia erros e alertas de diagnóstico da sessão para a sua conta na nuvem.",
   "settings.data.text": "O progresso de visualização e itens favoritados são armazenados localmente de forma segura.",
   "settings.data.title": "Dados & Armazenamento",
   "settings.dialog.resetHistoryConfirm": "Zerar histórico",

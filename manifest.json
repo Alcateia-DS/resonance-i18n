@@ -7,16 +7,20 @@
   ],
   "files": {
     "locales/pt-BR.json": {
-      "keys": 1395,
-      "sha256": "1b702581543a34853871f3b062b1c78b00e90a1de08883685384d0da7a30097b"
+      "keys": 1397,
+      "sha256": "93440860c0c60d15d5efdb1a8e71d8e5d0128e6fdd2d412dd33da664bb3c229d"
     },
     "native/android/pt-BR.json": {
       "keys": 60,
       "sha256": "526e9e45bc138cc16129f15d64d9ff92bd36efab711057db51d3e615d8cb9735"
     },
     "native/rust/pt-BR.json": {
-      "keys": 57,
-      "sha256": "19c924d613302742d825770cf8341cd5cddfed7078c7c74cb8417604b9ed5b63"
+      "keys": 62,
+      "sha256": "a0f49d3e9e9b2062853f312db70775d24401f40a2dfacea1dac17fe6e8b1a743"
+    },
+    "native/switch/pt-BR.json": {
+      "keys": 78,
+      "sha256": "fc5a316a37c1176c6fe3173ecd21877d5b3ccbb05c1cffcf68d176fb0e88abf9"
     }
   }
 }
